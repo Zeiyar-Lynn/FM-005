@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  font-family: 'karla', sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  height: -webkit-fill-available;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e5eff5;
+}
+
+section {
+  max-width: 40rem;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 15px rgba(152, 166, 189, 0.5);
+          box-shadow: 0 0 15px rgba(152, 166, 189, 0.5);
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+.description {
+  padding: 2.5rem;
+}
+
+.description h1 {
+  color: #2ab2af;
+}
+
+.description h2 {
+  margin-block: 1.8rem 1rem;
+  color: #c0df34;
+}
+
+.description p {
+  color: #98a6bd;
+  line-height: 25px;
+}
+
+.lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  background-color: #2ab2af;
+}
+
+.lower > * {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 2.5rem;
+}
+
+.subscription p {
+  margin-block: .25rem 1.5rem;
+}
+
+.subscription #price {
+  line-height: 2rem;
+  margin-block: 1rem .25rem;
+}
+
+.subscription #price b {
+  font-size: 2rem;
+}
+
+.subscription span {
+  vertical-align: top;
+  padding-left: 5px;
+  color: #e5eff5;
+}
+
+.subscription button {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  padding-block: .9em;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  background-color: #c0df34;
+}
+
+.about {
+  position: relative;
+}
+
+.about p {
+  font-size: 15px;
+  text-align: left;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+  margin-top: .9rem;
+}
+
+.about ul li {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: lighter;
+  color: #e5eff5;
+}
+
+.about #overlay {
+  background-color: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 530px) {
+  section {
+    width: 90%;
+  }
+  .lower {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */

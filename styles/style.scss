@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+
+* {
+   margin: 0;
+   font-family: 'karla', sans-serif;
+}
+
+$clr-cyan: hsl(179, 62%, 43%);
+$clr-bri-yellow: hsl(71, 73%, 54%);
+$clr-lig-grey: hsl(204, 43%, 93%);
+$clr-geryish-blue:hsl(218, 22%, 67%);
+$clr-white: #fff;
+
+main {
+   width: 100%;
+   min-height: 100vh;
+   height: -webkit-fill-available;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: $clr-lig-grey;
+}
+
+section {
+   max-width: 40rem;
+   background-color: $clr-white;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 0 15px hsla(218, 22%, 67%, .5);
+}
+
+h2 {
+   font-size: 1.1rem;
+}
+
+.description {
+   padding: 2.5rem;
+
+   h1 {
+      color: $clr-cyan;
+   }
+
+   h2 {
+      margin-block: 1.8rem 1rem;
+      color: $clr-bri-yellow;
+   }
+
+   p {
+      color: $clr-geryish-blue;
+      line-height: 25px;
+   }
+}
+
+.lower {
+   display: flex;
+   color: $clr-white;
+   background-color: $clr-cyan;
+
+   > * {
+      flex-basis: 50%;
+      padding: 2.5rem;
+   }
+}
+
+.subscription {
+   p {
+      margin-block: .25rem 1.5rem;
+
+   }
+   #price {
+      line-height: 2rem;
+      margin-block: 1rem .25rem;
+   }
+
+   #price b {
+      font-size: 2rem;
+   }
+   
+   span {
+      vertical-align: top;
+      padding-left: 5px;
+      color: $clr-lig-grey;
+   }
+
+   button {
+      width: 100%;
+      font-size: 16px;
+      font-weight: 700;
+      padding-block: .9em;
+      color: $clr-white;
+      border: none;
+      border-radius: 6px;
+      background-color: $clr-bri-yellow;
+   }
+}
+
+.about {
+   position: relative;
+
+   p {
+      font-size: 15px;
+      text-align: left;
+   }
+
+   ul {
+      list-style: none;
+      padding: 0;
+      margin-top: .9rem;
+   }
+
+   ul li{
+      font-size: 15px;
+      line-height: 22px;
+      font-weight: lighter;
+      color: $clr-lig-grey;
+   }
+
+   #overlay {
+      background-color: rgba(255,255,255,.25);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+   }
+}
+
+// Mobile
+@media (max-width: 530px) {
+   section {
+      width: 90%;
+   }
+
+   .lower {
+      flex-direction: column;
+   }
+}
